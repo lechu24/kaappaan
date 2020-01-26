@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.complaint"
+    android:padding="7dp"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvcomplaintdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Complaint Details"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Date of Incident:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Time of Incident:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Place of Incident:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvdistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="District:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Police Station:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/ps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvcomplaintcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Complaint Category:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvcomplaintsubcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Sub-Category:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/subcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Details of Incident:"
+            android:textColor="@android:color/black"
+            android:textSize="17sp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="20"
+            android:maxLines="20"
+            android:textSize="16sp"
+            android:background="@drawable/rec"
+            android:fontFamily="serif"
+            android:textAlignment="textStart"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/brownbadge"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="#fff" />
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

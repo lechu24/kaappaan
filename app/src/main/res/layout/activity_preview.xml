@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.Preview"
+    android:orientation="vertical"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        >
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:textSize="17sp"
+            android:layout_gravity="right"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:padding="7dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivmplogo"
+                    android:layout_width="113dp"
+                    android:layout_height="122dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/mplogo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvfir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="FIRST INFORMATION REPORT"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvsection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="(Under Section 154 Cr.P.C)"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="1."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvdistrict"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:text="*District"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tventerdistrict"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:text="Districtname" />
+
+                <TextView
+                    android:id="@+id/tvyear"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="*Year"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tventeryear"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Year" />
+
+                <TextView
+                    android:id="@+id/tvfirno"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="FIR.No"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tventerfirno"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:text="FIR.no" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="2."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvps"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:text="*P.S"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tventerps"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:text="policestation" />
+
+                <TextView
+                    android:id="@+id/tvacts"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:text="*Acts and section"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tventeracts"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="Acts" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="3."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv3a"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="(a)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvooo"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="*Occurence Of Offence:"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tvoooday"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="39dp"
+                    android:text="*Day"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvoooenterday"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="day" />
+
+                <TextView
+                    android:id="@+id/tvooodate"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="*Date"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvoooenterdate"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="dd" />
+
+                <TextView
+                    android:id="@+id/tvoootime"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="*Time"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvoooentertime"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="time" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv32"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="3."
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv3b"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="(b)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvirps"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="*Information Received at the P.S:"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tvirpsday"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="39dp"
+                    android:text="*Day"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvirpsenterday"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="day" />
+
+                <TextView
+                    android:id="@+id/tvirpsdate"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="*Date"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvirpsenterdate"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="dd" />
+
+                <TextView
+                    android:id="@+id/tvirpstime"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="*Time"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvirpsentertime"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="time" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="4."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvtoi"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:text="Type Of Information:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvwriteeng"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Written English" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="5."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvpoo"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text="Place Of Occurence:"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tvpooaddr"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="40dp"
+                    android:text="Address:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvpooenteraddr"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="3.5"
+                    android:text="address"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="6."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvinformant"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Complaint/Informant:"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv6a"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="15dp"
+                    android:text="(a)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6name"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="*Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6entername"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:text="Name" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv6b"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="15dp"
+                    android:text="(b)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6father"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:text="*Father/Husband Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6enterfather"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="Name" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv6c"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="15dp"
+                    android:text="(c)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6mobileno"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="*Mobile Number"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6entermobileno"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="Number" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv6d"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="15dp"
+                    android:text="(d)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6aadharno"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4"
+                    android:text="*Aadhar Number"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6enteraadharno"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="Aadhar Number" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv6e"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="15dp"
+                    android:text="(e)"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6addr"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:text="*Address"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv6enteraddr"
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="3.5"
+                    android:text="address" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="7."
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv7detail"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.8"
+                    android:text="Details of known/suspect/unknown/accused with full particulars:"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv7enterdetail"
+                    android:layout_width="20dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="4.9"
+                    android:paddingLeft="15dp"
+                    android:text="Details" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="8."
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvsignofinformant"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text="*Signature of Informant:"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tventersignofinformant"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="sign" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="9."
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv9a"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="(a)"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvsignofofficer"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.0"
+                    android:text="*Signature of Officer"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tventersignofofficer"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="sign" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/tv9b"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="15dp"
+                    android:text="(b)"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvdesignationofofficer"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.0"
+                    android:text="*Designation of Officer"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tventerdesignationofofficer"
+                    android:layout_width="0in"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:text="designation" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

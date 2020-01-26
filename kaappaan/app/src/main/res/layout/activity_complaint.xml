@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.complaint"
+    android:padding="7dp"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complaint Details"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of Incident:"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_weight="2"
+        >
+
+    </TextView>
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time of Incident:"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place of Incident:"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="District:"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Police Station:"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complaint Category:"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details of Incident:"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="2"
+            >
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/etaddr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="20"
+            android:maxLines="20"
+            android:textSize="16sp"
+            android:background="@drawable/rec"
+            android:fontFamily="serif"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" 
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".functions.Policeview">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+
+                <TextView
+                    android:id="@+id/tvpoliceview"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Police View"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvpvdistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="District:"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"/>
+
+
+                <Spinner
+                    android:id="@+id/spinnerpvdistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvpvpolicestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Police Station:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+
+                <Spinner
+                    android:id="@+id/spinnerpvpolicestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:padding="7dp"
+                />
+        </LinearLayout>
+
+
+</LinearLayout>

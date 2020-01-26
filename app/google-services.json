@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "140304963578",
+    "firebase_url": "https://kslv-fir.firebaseio.com",
+    "project_id": "kslv-fir",
+    "storage_bucket": "kslv-fir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140304963578:android:8e6ef9f918ed7248373643",
+        "android_client_info": {
+          "package_name": "kslv.team.kaappaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140304963578-6csltk8dcot0h63llbi7an2fp68fcd8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kslv.team.kaappaan",
+            "certificate_hash": "f4e243ceb6ce94d58b15f53d8b55274b35ec69b0"
+          }
+        },
+        {
+          "client_id": "140304963578-ir9t5naof6snuvhtdct59vn2pma3s5g5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSTClO5hLV_FE72Bl1eqL6WDZFogerarA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140304963578-ir9t5naof6snuvhtdct59vn2pma3s5g5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
